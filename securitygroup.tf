@@ -21,6 +21,6 @@ resource "aws_security_group" "splunk_sg" {
   }
 
 }
-output "security group" {
+output "security_group" {
     value = "${aws_security_group.splunk_sg.id}"
 }

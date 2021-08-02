@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-infra-splunk-version7"
-    key = "Rome"
+    bucket = "splunk-infra01"
+    key = "habeeb"
   }
 }

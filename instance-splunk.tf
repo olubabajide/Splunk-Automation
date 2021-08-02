@@ -11,8 +11,9 @@ resource "aws_instance" "splunk" {
   connection {
     user = "${var.INSTANCE_USERNAME}"
     private_key = "${file("${var.PATH_TO_PRIVATE_KEY}")}"
+    host = "self.public_ip"
   }
-tags {
+tags = {
     Name = "splunk-master"
   }
 
